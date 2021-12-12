@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Myproject 
+class Olx 
 {
 	public static void main(String[] args) 
 	{
