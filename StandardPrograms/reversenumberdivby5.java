@@ -19,7 +19,7 @@ class reversenumberdivby5
 		}
 		System.out.println("The reverse of "+ temp + " is " +rev);
 		System.out.println("The Summation of "+ temp + " is "+ sum);
-		if (sum%2==0)
+		if (sum%5==0)
 		{
 			System.out.println("The reverse summation is divisible by 5 ");
 		}
