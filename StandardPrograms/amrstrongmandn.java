@@ -35,7 +35,6 @@ class  amrstrongmandn
 				{
 					System.out.println(sum);
 				}
-			
 		}
 	}
 }
