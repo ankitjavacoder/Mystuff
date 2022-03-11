@@ -1,0 +1,21 @@
+abstract class Parent2{
+    public Parent2(){
+        System.out.println("Mai base2 ka constructor hoon");
+    }
+    public void sayHello(){
+        System.out.println("Hello");
+    }
+    abstract public void greet();
+}
+class Child2 extends Parent2{
+	public Child2(int a,int b){ System.out.println( a+b+" This is Child2" );}
+    public void greet(){
+       System.out.println("Good morning");
+    }
+}
+public class cwh_53_abstract {
+    public static void main(String[] args) {
+        Child2 c = new Child2(10,2);
+		//Parent2 = p = new Parent2();
+    }
+}
