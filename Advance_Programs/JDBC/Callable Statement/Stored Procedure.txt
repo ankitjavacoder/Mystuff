@@ -1,0 +1,13 @@
+File Name SelectData
+=============================================================
+
+DELIMITER $$;
+
+DROP PROCEDURE IF EXISTS `ankitdatabase`.`SelectData`$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `SelectData`()
+BEGIN
+select * from studentinfo where rollName = 201;
+END$$
+
+DELIMITER ;$$
