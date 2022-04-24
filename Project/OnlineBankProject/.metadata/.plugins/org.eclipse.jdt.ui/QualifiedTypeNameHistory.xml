@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="javax.servlet.Registration"/>
+<fullyQualifiedTypeName name="com.jspiders.dao.SingleTon"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.jspiders.dao.UserDAO"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="com.jspiders.utility.RegistrationController"/>
+<fullyQualifiedTypeName name="com.jspiders.dto.RegistrationDTO"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+</qualifiedTypeNameHistroy>

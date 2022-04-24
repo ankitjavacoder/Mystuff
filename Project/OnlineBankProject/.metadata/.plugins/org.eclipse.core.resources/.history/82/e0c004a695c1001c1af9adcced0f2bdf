@@ -1,0 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+</head>
+<body style="background-color: tomato;">
+<center>
+	<h1>Registration Process of Bank of Jspider !</h1>
+	<form action="" method="post">
+	<label>First Name</label>
+	<input></input>
+	<br>
+	<label>Last Name</label>
+	<input></input>
+	<br>
+	<label>Mobile</label>
+	<input></input>
+	<br>	
+	<label>Aadhar Card No:</label>
+	<input></input>
+	<br>
+	<label>Pan Card</label>
+	<input></input>
+	<br>
+	<label>Email - ID</label>
+	<input type="email"></input>
+	<br>
+	<label>Address</label>
+	<textarea></textarea>
+	<br>
+	<label>Date of Birth</label>
+	<input type="date">
+	<br>
+	<label>Gender : </label>
+	<input type="button" name="abc">Male</input>
+	<input type="button" name="abc">Female</input>
+	<br>
+	<label>Type of Account </label>
+	<input type="button" name="type">SB</input>
+	<input type="button" name="type">FD</input>
+	<input type="button" name="type">CA</input>
+	<input type="button" name="type">RD</input>
+	<br>	
+	<label>Amount : </label>
+	<input placeholder=".rs"></input>
+	<br>
+	<label>Password : </label>
+	<input type="password"></input>
+	<br>
+	<label>Confirm Password : </label>
+	<input type="password"></input>
+	<br>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+	</form>
+	
+</center>
+</body>
+</html>

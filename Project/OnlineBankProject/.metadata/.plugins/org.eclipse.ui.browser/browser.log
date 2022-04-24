@@ -1,0 +1,10 @@
+
+Apr 24, 2022 09:15:44.52 NEW SESSION
+Apr 24, 2022 09:15:44.52 [16144:3280:0424/091544.513:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Invalid credentials (credentials rejected by client).
+Apr 24, 2022 09:15:48.46 [16144:3280:0424/091548.464:ERROR:device_event_log_impl.cc(214)] [09:15:48.464] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 24, 2022 09:15:48.46 [16144:3280:0424/091548.464:ERROR:device_event_log_impl.cc(214)] [09:15:48.464] USB: usb_device_handle_win.cc:1049 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Apr 24, 2022 09:16:44.45 [16144:14492:0424/091644.456:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Apr 24, 2022 11:30:54.37 [16144:19356:0424/113054.376:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Apr 24, 2022 11:30:54.94 [16144:19356:0424/113054.941:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Apr 24, 2022 11:55:47.80 [16144:3280:0424/115547.807:ERROR:device_event_log_impl.cc(214)] [11:55:47.807] USB: usb_service_win.cc:260 Failed to get device driver name: Element not found. (0x490)
+Apr 24, 2022 12:46:49.00 [16144:19356:0424/124649.003:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
