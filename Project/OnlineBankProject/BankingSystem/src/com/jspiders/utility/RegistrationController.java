@@ -22,13 +22,14 @@ String address = req.getParameter("addr");
 String mobile = req.getParameter("mob");
 String aadhar = req.getParameter("aadhar");
 String pancard = req.getParameter("pancard");
-String email = req.getParameter("mail");
+String email = req.getParameter("email");
 String dob = req.getParameter("dob");
 String gender = req.getParameter("abc");
 String accountType = req.getParameter("type");
 String temp = req.getParameter("amt");
 double amount = Double.parseDouble(temp);
 String password = req.getParameter("pwd");
+String cPassword = req.getParameter("cpwd");
 
 RegistrationDTO dto = new RegistrationDTO();
 dto.setFirstName(first);
@@ -46,13 +47,16 @@ dto.setAccountType(accountType);
 
 String accountNumber = null ;
 UserService service = new UserService();
+RequestDispatcher dispatcher = null;
 
 try {
-	accountNumber = service.userAccountNumber(dto);
+	if (password.equals(cPassword)) {
+		accountNumber = service.userAccountNumber(dto);
+	}
 } catch (SQLException e) {
 	e.printStackTrace();
 }
-RequestDispatcher dispatcher = null;
+//RequestDispatcher dispatcher = null;
 if (accountNumber != null) {
 	req.setAttribute("accNo", accountNumber);
 dispatcher = req.getRequestDispatcher("account.jsp");	

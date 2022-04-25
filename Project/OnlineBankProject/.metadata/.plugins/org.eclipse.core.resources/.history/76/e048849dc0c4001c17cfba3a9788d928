@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Banking System</title>
+</head>
+<body style = "background-color: violet;">
+	<input type="button" value="LOGOUT"></input>
+	<br></br>
+	<form action="">
+	<input type="submit" value="VIEWBALANCE"></input>
+	</form>
+	<form action="">
+	<input type="submit" value="MONEY TRANSFER"></input>	
+	</form>
+		<form action="">
+	<input type="submit" value="VIEW STATEMENT"></input>	
+	</form>
+</body>
+</html>

@@ -8,3 +8,11 @@ Apr 24, 2022 11:30:54.37 [16144:19356:0424/113054.376:ERROR:connection_factory_i
 Apr 24, 2022 11:30:54.94 [16144:19356:0424/113054.941:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
 Apr 24, 2022 11:55:47.80 [16144:3280:0424/115547.807:ERROR:device_event_log_impl.cc(214)] [11:55:47.807] USB: usb_service_win.cc:260 Failed to get device driver name: Element not found. (0x490)
 Apr 24, 2022 12:46:49.00 [16144:19356:0424/124649.003:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+Apr 24, 2022 14:16:08.17 [16144:19356:0424/141608.179:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Apr 24, 2022 14:16:44.43 [16144:18592:0424/141644.436:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Apr 24, 2022 15:17:02.92 [16144:19356:0424/151702.919:ERROR:connection_handler_impl.cc(471)] Timed out waiting for GCM Protocol buffer.
+Apr 24, 2022 15:17:04.30 [16144:19356:0424/151704.307:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Apr 24, 2022 18:28:04.07 [16144:19356:0424/182804.072:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Apr 24, 2022 18:28:16.41 [16144:19356:0424/182816.419:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+Apr 24, 2022 18:28:30.56 [16144:19356:0424/182830.561:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+Apr 24, 2022 19:45:14.41 [16144:15920:0424/194514.411:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater

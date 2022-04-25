@@ -14,7 +14,7 @@
 	<input name="fn"></input>
 	<br></br>
 	<label>Last Name</label>
-	<input name="fn"></input>
+	<input name="ln"></input>
 	<br></br>
 	<label>Mobile</label>
 	<input name="mob"></input>
@@ -51,7 +51,7 @@
 	<input type="password" name="pwd"></input>
 	<br></br>
 	<label>Confirm Password : </label>
-	<input type="password"></input>
+	<input type="password" name="cpwd"></input>
 	<br></br>
 	<input type="submit" value="Submit">
 	<input type="reset" value="Reset">
@@ -63,7 +63,7 @@
 String errormsg = (String)request.getAttribute("msg");
 if(errormsg != null){
 	%>
-	<h1 style="color: red;"><%= errormsg %></h1>
+	<center><h1 style="color: red;"><%= errormsg %></h1></center>
 	<%
 }
 %>

@@ -7,7 +7,7 @@ import com.jspiders.dto.RegistrationDTO;
 
 public class UserDAO {
 	public String registrationDAO(RegistrationDTO dto) throws SQLException {
-		String query = "insert into onlinebankmanagement.bankaccountdetails(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+		String query = "insert   into onlinebankmanagement.bankaccountdetails values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		SingleTon singleTon = SingleTon.getObject();
 		Connection connection = singleTon.getConnection();
 		System.out.println("Established "+ connection);
@@ -34,5 +34,32 @@ public class UserDAO {
 			accountNumber = null;
 		}
 		return accountNumber;
+	}
+	String firstName;
+	String lastName;
+	String accountNo;
+	
+	public RegistrationDTO userLogin(String accNo, String password) throws SQLException {
+		RegistrationDTO dto = null;
+		String query = "select * from onlinebankmanagement.bankaccountdetails where accountNo = ? and password = ?";
+		SingleTon singleTon = SingleTon.getObject();
+		Connection connection = singleTon.getConnection();
+		PreparedStatement pstmt = connection.prepareStatement(query);
+		pstmt.setString(1, accNo);
+		pstmt.setString(2, password);
+		ResultSet rs = pstmt.executeQuery();
+		if (rs.next()) {
+			dto = new RegistrationDTO();
+			firstName = rs.getString("firstName");
+			lastName =  rs.getString("lastName");
+			accountNo = rs.getString("accountNumber");
+			System.out.println("First Name : "+ firstName);
+			dto.setFirstName(firstName);
+			dto.setLastName(lastName);
+			dto.setAccountNo(accountNo);
+		} else {
+				dto = null;
+		}
+		return dto;
 	}
 }

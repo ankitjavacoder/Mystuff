@@ -14,12 +14,7 @@ public class RegistrationDTO {
 	private String accountType;
 	private String password;
 	private double amount;
-	public double getAmount() {
-		return amount;
-	}
-	public void setAmount(double amount) {
-		this.amount = amount;
-	}
+	
 	public String getAccountNo() {
 		return accountNo;
 	}
@@ -92,6 +87,11 @@ public class RegistrationDTO {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
 
-	
 }

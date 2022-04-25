@@ -11,10 +11,10 @@
 	<center>
 	<h1>Welcome to Jspider Bank</h1>
 	<label> Account Number</label>
-	<input>
+	<input name="an">
 	<br></br>
 	<label>Password</label>
-	<input type="password">
+	<input type="password" name="pwd">
 	<br></br>
 	<input type="submit" value="Login">
 	<br></br>

@@ -24,4 +24,8 @@ public String userAccountNumber(RegistrationDTO dto) throws SQLException {
 	accountNumber = dao.registrationDAO(dto);
 	return accountNumber;
 }
+public RegistrationDTO userLoginService(String accNo, String pwd) throws SQLException {
+	RegistrationDTO dto = dao.userLogin(accNo, pwd);
+	return dto;
+}
 }
