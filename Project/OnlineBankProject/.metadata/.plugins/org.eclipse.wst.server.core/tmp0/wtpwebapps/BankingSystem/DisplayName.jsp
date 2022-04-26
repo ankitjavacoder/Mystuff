@@ -9,7 +9,11 @@
 <body style = "background-color: violet;">
 	<input type="button" value="LOGOUT"></input>
 	<br></br>
-	<form action="">
+<%
+String username = (String)session.getAttribute("un");
+%>
+<center><h1>UserName : <em style="background-color: lime;"><%= username %></em></h1></center>
+	<form action="ViewBalanceController">
 	<input type="submit" value="VIEWBALANCE"></input>
 	</form>
 	<br></br>

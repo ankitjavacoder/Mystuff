@@ -26,6 +26,11 @@ public String userAccountNumber(RegistrationDTO dto) throws SQLException {
 }
 public RegistrationDTO userLoginService(String accNo, String pwd) throws SQLException {
 	RegistrationDTO dto = dao.userLogin(accNo, pwd);
+	System.out.println("User service");
 	return dto;
+}
+/* to transfer account info into userDAO*/
+public double viewBlanceService(String accNo) throws SQLException {
+ return dao.viewBalanceDao(accNo);
 }
 }

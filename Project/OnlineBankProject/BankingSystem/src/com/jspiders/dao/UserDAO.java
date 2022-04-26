@@ -44,15 +44,20 @@ public class UserDAO {
 		String query = "select * from onlinebankmanagement.bankaccountdetails where accountNo = ? and password = ?";
 		SingleTon singleTon = SingleTon.getObject();
 		Connection connection = singleTon.getConnection();
+		System.out.println("Connection");
 		PreparedStatement pstmt = connection.prepareStatement(query);
+		System.out.println("statement");
 		pstmt.setString(1, accNo);
 		pstmt.setString(2, password);
 		ResultSet rs = pstmt.executeQuery();
+		System.out.println("query");
+		System.out.println("Accno " + accNo);
+		System.out.println("Password " + password);
 		if (rs.next()) {
 			dto = new RegistrationDTO();
 			firstName = rs.getString("firstName");
 			lastName =  rs.getString("lastName");
-			accountNo = rs.getString("accountNumber");
+			accountNo = rs.getString("accountNo");
 			System.out.println("First Name : "+ firstName);
 			dto.setFirstName(firstName);
 			dto.setLastName(lastName);
@@ -61,5 +66,18 @@ public class UserDAO {
 				dto = null;
 		}
 		return dto;
+	}
+	public double viewBalanceDao(String accNo) throws SQLException {
+		double balance = 0;
+		String query = "select * from onlinebankmanagement.bankaccountdetails where accountNo = ?";
+		SingleTon singleTon = SingleTon.getObject();
+		Connection connection = singleTon.getConnection();
+		PreparedStatement pstmt = connection.prepareStatement(query);
+		pstmt.setString(1, accNo);
+		ResultSet rs = pstmt.executeQuery();
+		if (rs.next()) {
+			balance = rs.getDouble("amount");
+		}
+		return balance;
 	}
 }

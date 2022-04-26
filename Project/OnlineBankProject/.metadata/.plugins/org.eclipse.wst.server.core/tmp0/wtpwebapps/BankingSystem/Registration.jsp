@@ -6,6 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Registration</title>
 </head>
+
 <body style="background-color: tomato;">
 <center>
 	<h1>Registration Process of Bank of Jspider !</h1>

@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Balance</title>
+</head>
+<body style="background-image: liner-gradient(red,yellow);">
+	<%
+		String username = (String)session.getAttribute("un");
+	%>
+	<strong style="font-size: 30px; float: right;"></strong>
+	<form action="DisplayName.jsp">
+	<input type="submit" value=""Home"></input>
+	</form>
+	<center>
+	<h1>Your Balance Rs : </h1>
+	</center>
+</body>
+</html>

@@ -7,8 +7,8 @@
 <title>Login </title>
 </head>
 <body style="background-color: cyan;">
-	<form action="">
-	<center>
+<center>
+	<form action="LoginController" method = "post">
 	<h1>Welcome to Jspider Bank</h1>
 	<label> Account Number</label>
 	<input name="an">
@@ -19,7 +19,17 @@
 	<input type="submit" value="Login">
 	<br></br>
 	<a href="Registration.jsp">Not yet Registered ?</a>
-	</center>
 	</form>
+	</center>
+	<%
+		String message = (String) request.getAttribute("msg");
+	if(message != null){
+		%>
+		<center>
+		<strong style="color: red; font-size: 20px;"><%= message %> </strong>
+		</center>
+		<%
+	}
+	%>
 </body>
 </html>

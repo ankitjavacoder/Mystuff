@@ -19,6 +19,7 @@ public class LoginController  extends HttpServlet{
 protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	String accountNo = req.getParameter("an");
 	String pwd = req.getParameter("pwd");
+	System.out.println(accountNo + ", " + pwd);
 	UserService service = new UserService();
 	try {
 		RegistrationDTO dto = service.userLoginService(accountNo, pwd);
@@ -29,6 +30,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 			String username = dto.getFirstName().toUpperCase() + " " + dto.getLastName().toUpperCase();
 			session.setAttribute("un", username);
 			session.setAttribute("an", accountNo);
+			System.out.println("Username" + username);
 			session.setMaxInactiveInterval(450);
 			dispatcher = req.getRequestDispatcher("DisplayName.jsp");
 		}
@@ -36,7 +38,8 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 			req.setAttribute("msg", "Invalid Credentails");
 		dispatcher = req.getRequestDispatcher("Login.jsp");
 		}
-	} catch (SQLException e) {
+		dispatcher.include(req, resp);
+	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
