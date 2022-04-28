@@ -3,7 +3,9 @@ import java.sql.*;
 
 import javax.servlet.Registration;
 
+import com.jspiders.dto.ReceiverDTO;
 import com.jspiders.dto.RegistrationDTO;
+import com.jspiders.dto.SenderDTO;
 
 public class UserDAO {
 	public String registrationDAO(RegistrationDTO dto) throws SQLException {
@@ -79,5 +81,27 @@ public class UserDAO {
 			balance = rs.getDouble("amount");
 		}
 		return balance;
+	}
+	public String moneyTransferUpdation(SenderDTO senderDTO, ReceiverDTO receiverDTO) throws SQLException {
+		String query = "Update onlinebankmanagement.bankaccountdetails set amount = ? where accountNo = ?";
+		SingleTon singleTon = SingleTon.getObject();
+		Connection connection = singleTon.getConnection();
+		PreparedStatement pstmt = connection.prepareStatement(query);
+//		to update balance in sender account
+		pstmt.setDouble(1, senderDTO.getBalance());
+		pstmt.setString(2, senderDTO.getAccountNo());
+		pstmt.addBatch();
+//		to update balance in receiver amount
+		pstmt.setDouble(1, receiverDTO.getBalance());
+		pstmt.setString(2, receiverDTO.getAccountNo());
+		pstmt.addBatch();
+//		to execute records
+		int [] recordStatus = pstmt.executeBatch();
+		String tid = null;
+		if (recordStatus[1] != 0) {
+			TransactionDAO trDao =  new TransactionDAO();
+			tid = trDao.insertIransaction(senderDTO, receiverDTO, connection);
+		}
+		return tid;
 	}
 }

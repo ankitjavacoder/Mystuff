@@ -1,0 +1,17 @@
+package com.jspiders.service;
+
+import java.util.Random;
+
+public class MoneyTransactionService {
+public int transactionNumber() {
+	Random random = new Random();
+	int id = random.nextInt();
+	if (id<0) {
+		id = id*-1;
+	}
+	if (id< 1000000000) {
+		id+= 1000000000;
+	}
+	return id;
+}
+}

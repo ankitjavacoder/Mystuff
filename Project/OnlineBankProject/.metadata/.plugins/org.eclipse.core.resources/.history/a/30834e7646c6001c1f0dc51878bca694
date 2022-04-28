@@ -1,0 +1,25 @@
+package com.jspiders.service;
+
+import java.util.Random;
+
+import com.jspiders.dto.ReceiverDTO;
+import com.jspiders.dto.SenderDTO;
+
+public class MoneyTransactionService {
+public int transactionNumber() {
+	Random random = new Random();
+	int id = random.nextInt();
+	if (id<0) {
+		id = id*-1;
+	}
+	if (id< 1000000000) {
+		id+= 1000000000;
+	}
+	return id;
+}
+public void moneyTransferService(SenderDTO senderDTO, ReceiverDTO receiverDTO, double amount) {
+//	generate transaction id
+	int id = transactionNumber();
+	String tid = null;
+}
+}

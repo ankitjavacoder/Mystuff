@@ -2,19 +2,25 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="javax.servlet.Registration"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="com.jspiders.dao.UserDAO"/>
 <fullyQualifiedTypeName name="com.jspiders.utility.RegistrationController"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="com.jspiders.dao.SingleTon"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.jspiders.dto.RegistrationDTO"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
-<fullyQualifiedTypeName name="com.jspiders.service.UserService"/>
-<fullyQualifiedTypeName name="com.jspiders.dto.RegistrationDTO"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.jspiders.dao.SingleTon"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.jspiders.dao.TransactionDAO"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.jspiders.service.MoneyTransactionService"/>
+<fullyQualifiedTypeName name="com.jspiders.dto.SenderDTO"/>
+<fullyQualifiedTypeName name="com.jspiders.dto.ReceiverDTO"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.jspiders.service.UserService"/>
+<fullyQualifiedTypeName name="com.jspiders.dao.UserDAO"/>
 </qualifiedTypeNameHistroy>
