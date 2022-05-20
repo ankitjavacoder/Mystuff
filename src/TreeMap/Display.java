@@ -28,7 +28,7 @@ if (input.equalsIgnoreCase("emp")) {
     }
 }
 else if (input.equalsIgnoreCase("salary")) {
-    TreeMap<MyMembers, Integer> empTreeMap = new TreeMap<>(new AgeComparator());
+    TreeMap<MyMembers, Integer> empTreeMap = new TreeMap<>(new SalComparator());
     empTreeMap.put(new MyMembers(101,25660,26,"Hyderabad"),1);
     empTreeMap.put(new MyMembers(99,256600,39,"Chennai"),3);
     empTreeMap.put(new MyMembers(156,96500,58,"France"),2);
@@ -48,7 +48,7 @@ class EmpComparator implements Comparator<MyMembers>{
 class AgeComparator implements Comparator<MyMembers>{
     @Override
     public int compare(MyMembers o1, MyMembers o2) {
-        return o1.getEmpNo()-o2.getEmpNo();
+        return o1.getAge()-o2.getAge();
     }
 }
 class SalComparator implements Comparator<MyMembers>{
